@@ -1,0 +1,347 @@
+/* Ví dụ sử dụng font chữ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&display=swap');
+
+
+/* General Styles */
+body {
+    font-family: 'M PLUS Code Latin'; /* Improved Vietnamese text support */
+    background-color: #000000; /* Black background */
+    color: #FEE191; /* Gold text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #333333; /* Dark gray background */
+    color: #FEE191; /* Gold text color */
+    padding: 20px;
+    border-bottom: 2px solid #444444; /* Slightly lighter dark gray border */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.text-container h3 {
+    font-size: 400%;
+    font-weight: bold;
+    color: #FEE191; /* Gold text color */
+
+}
+
+.text-container p {
+    font-size: 150%;
+    font-weight: 300;
+    color: #FEE191; /* Gold text color */
+}
+
+/* Profile Image */
+.profile-img {
+    min-width: 150px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #333333; /* Dark gray border */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: #444444; /* Slightly lighter dark gray on hover */
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #000000; /* Black background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-card h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #FEE191; /* Gold text color */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #FEE191; /* Gold text color */
+}
+
+/* Navigation */
+.nav .nav-item .nav-link {
+    color: #FEE191; /* Gold text color */
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav .nav-item .nav-link.active {
+    background-color: #444444; /* Slightly lighter dark gray background for active link */
+    color: #FEE191; /* Gold text color */
+}
+
+.nav .nav-item .nav-link:hover {
+    background-color: #333333; /* Dark gray background on hover */
+    color: #FEE191; /* Gold text color on hover */
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #FEE191; /* Gold text color */
+}
+
+/* Container */
+.container {
+    margin-top: 20px;
+    background-color: #000000; /* Black background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Work Section */
+#work {
+    margin-top: 20px;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-item h3 {
+    font-size: 1.25rem;
+    color: #FEE191; /* Gold text color */
+    border-bottom: 1px solid #444444; /* Slightly lighter dark gray border color */
+    padding-bottom: 5px;
+}
+
+.work-item p {
+    margin-bottom: 10px;
+    color: #FEE191; /* Gold text color */
+}
+
+.work-item strong {
+    font-weight: bold;
+    color: #FEE191; /* Gold text color */
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* Dark gray background */
+    color: #FEE191; /* Gold text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FEE191; /* Gold link color */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFED00; /* Lighter yellow color on hover */
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FEE191; /* Gold text color */
+}
+
+.text-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #FEE191; /* Gold text color */
+}
+
+.image-content {
+    flex: 1;
+    max-width: 400px;
+}
+
+.image-content img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 100%;
+    }
+}
+
+.custom-btn {
+    font-size: 200%;
+    padding: 0.75rem 1.5rem;
+    margin-left: auto;
+    border-radius: 20px;
+    border-color: #FEE191; /* Gold border color */
+    color: #000000; /* Black text color */
+    background-color: #FEE191; /* Gold background color */
+}
+
+/* Feedback Section Styles */
+/* Feedback Section Styles */
+#feedback {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #000000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#feedback h2 {
+    margin-bottom: 1.5rem;
+    color: #FEE191; /* Gold text color */
+}
+
+.feedback-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feedback-form,
+.feedback-reviews {
+    flex: 1;
+    max-width: 100%;
+}
+
+.feedback-form {
+    padding: 1rem;
+    background-color: #111111; /* Slightly darker black */
+    border-radius: 8px;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.feedback-form .form-control {
+    border-radius: 4px;
+    background-color: #333333; /* Dark gray background for inputs */
+    color: #FEE191; /* Gold text color */
+    border: 1px solid #444444; /* Darker border for inputs */
+}
+
+.feedback-form .btn-primary {
+    background-color: #FEE191; /* Gold background */
+    border-color: #FEE191; /* Gold border */
+    color: #000000; /* Black text color */
+}
+
+.feedback-reviews {
+    padding: 1rem;
+    background-color: #111111; /* Slightly darker black */
+    border-radius: 8px;
+}
+
+.feedback-reviews h3 {
+    color: #FEE191; /* Gold text color */
+}
+
+.review {
+    border: 1px solid #444444; /* Dark gray border */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #000000; /* Black background */
+    color: #FEE191; /* Gold text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feedback-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feedback-form,
+    .feedback-reviews {
+        max-width: 100%;
+    }
+}
+section a {
+    color: #FEE191; /* Gold link color */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #FFED00; /* Lighter yellow color on hover */
+    text-decoration: underline;
+}
+
