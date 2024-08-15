@@ -362,7 +362,7 @@ section a:hover {
 
 /* Apply animation to the header section */
 .header-section {
-    animation: fadeIn 10s ease-out;
+    animation: fadeIn 5s ease-out;
 }
 
 /* Animation for the profile image */
