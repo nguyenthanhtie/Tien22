@@ -1,10 +1,9 @@
-/* Ví dụ sử dụng font chữ Google Fonts */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&display=swap');
-
 
 /* General Styles */
 body {
-    font-family: 'M PLUS Code Latin'; /* Improved Vietnamese text support */
+    font-family: 'M PLUS Code Latin', sans-serif; /* Improved Vietnamese text support */
     background-color: #000000; /* Black background */
     color: #FEE191; /* Gold text color */
     margin: 0;
@@ -31,17 +30,21 @@ body {
     text-align: center;
 }
 
-.text-container h3 {
-    font-size: 400%;
+.text-container h1 {
+    font-size: 5rem; /* Adjusted font size */
     font-weight: bold;
     color: #FEE191; /* Gold text color */
-
+    margin-bottom: 1rem; /* Space below the name */
 }
 
-.text-container p {
-    font-size: 150%;
-    font-weight: 300;
-    color: #FEE191; /* Gold text color */
+.text-container h4 {
+    font-size: 2rem; /* Adjusted font size for headings */
+    margin-top: 0.5rem; /* Space above each heading */
+}
+
+.text-container h6 {
+    font-size: 1.5rem; /* Adjusted font size for details */
+    margin-bottom: 1rem; /* Space below each detail */
 }
 
 /* Profile Image */
@@ -91,7 +94,6 @@ body {
     margin: 5px 0;
     color: #FEE191; /* Gold text color */
 }
-
 /* Navigation */
 .nav .nav-item .nav-link {
     color: #FEE191; /* Gold text color */
@@ -153,7 +155,7 @@ body {
 .work-item h3 {
     font-size: 1.25rem;
     color: #FEE191; /* Gold text color */
-    border-bottom: 1px solid #444444; /* Slightly lighter dark gray border color */
+    border-bottom: 1px solid #444444; /* Slightly lighter dark gray border */
     padding-bottom: 5px;
 }
 
@@ -244,7 +246,7 @@ footer a:hover {
 }
 
 .custom-btn {
-    font-size: 200%;
+    font-size: 1.5rem; /* Adjusted font size */
     padding: 0.75rem 1.5rem;
     margin-left: auto;
     border-radius: 20px;
@@ -253,7 +255,6 @@ footer a:hover {
     background-color: #FEE191; /* Gold background color */
 }
 
-/* Feedback Section Styles */
 /* Feedback Section Styles */
 #feedback {
     margin-top: 2rem;
@@ -335,6 +336,7 @@ footer a:hover {
         max-width: 100%;
     }
 }
+
 section a {
     color: #FEE191; /* Gold link color */
     margin: 0 10px;
@@ -346,4 +348,3 @@ section a:hover {
     color: #FFED00; /* Lighter yellow color on hover */
     text-decoration: underline;
 }
-

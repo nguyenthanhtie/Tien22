@@ -65,3 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
         loadReviews();
     });
 });
+function showSection(sectionId, event) {
+    event.preventDefault();
+
+    // Hide all sections
+    document.querySelectorAll('.content-section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected section with a fade-in effect
+    const sectionToShow = document.getElementById(sectionId);
+    sectionToShow.style.display = 'block';
+    sectionToShow.classList.add('fade-in');
+    setTimeout(() => {
+        sectionToShow.classList.remove('fade-in');
+    }, 1000); // Duration of the fade-in animation
+}
