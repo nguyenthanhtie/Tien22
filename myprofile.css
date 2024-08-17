@@ -16,16 +16,35 @@ body {
     color: #FEE191; /* Gold text color */
     padding: 20px;
     border-bottom: 2px solid #444444; /* Slightly lighter dark gray border */
+    animation: fadeIn 5s ease-out; /* Animation for fade-in effect */
 }
 
+/* Animation keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #000000; /* Black background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Text Container */
 .text-container {
     text-align: center;
 }
@@ -51,7 +70,6 @@ body {
 .profile-img {
     min-width: 150px;
     min-height: 150px;
-    max-width: 500px;
     max-width: 500px;
     object-fit: cover;
     border-radius: 50%;
@@ -94,6 +112,7 @@ body {
     margin: 5px 0;
     color: #FEE191; /* Gold text color */
 }
+
 /* Navigation */
 .nav .nav-item .nav-link {
     color: #FEE191; /* Gold text color */
@@ -134,65 +153,6 @@ body {
     color: #FEE191; /* Gold text color */
 }
 
-/* Container */
-.container {
-    margin-top: 20px;
-    background-color: #000000; /* Black background */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Work Section */
-#work {
-    margin-top: 20px;
-}
-
-.work-item {
-    margin-bottom: 20px;
-}
-
-.work-item h3 {
-    font-size: 1.25rem;
-    color: #FEE191; /* Gold text color */
-    border-bottom: 1px solid #444444; /* Slightly lighter dark gray border */
-    padding-bottom: 5px;
-}
-
-.work-item p {
-    margin-bottom: 10px;
-    color: #FEE191; /* Gold text color */
-}
-
-.work-item strong {
-    font-weight: bold;
-    color: #FEE191; /* Gold text color */
-}
-
-/* Footer */
-footer {
-    background-color: #333333; /* Dark gray background */
-    color: #FEE191; /* Gold text color */
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #FEE191; /* Gold link color */
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #FFED00; /* Lighter yellow color on hover */
-    text-decoration: underline;
-}
-
 /* About Section */
 .about-content {
     display: flex;
@@ -229,30 +189,6 @@ footer a:hover {
     width: 80%;
     height: auto;
     border-radius: 10px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .text-content,
-    .image-content {
-        max-width: 100%;
-    }
-}
-
-.custom-btn {
-    font-size: 1.5rem; /* Adjusted font size */
-    padding: 0.75rem 1.5rem;
-    margin-left: auto;
-    border-radius: 20px;
-    border-color: #FEE191; /* Gold border color */
-    color: #000000; /* Black text color */
-    background-color: #FEE191; /* Gold background color */
 }
 
 /* Feedback Section Styles */
@@ -325,6 +261,17 @@ footer a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 100%;
+    }
+
     .feedback-content {
         flex-direction: column;
         align-items: center;
@@ -337,6 +284,66 @@ footer a:hover {
     }
 }
 
+/* Custom Button */
+.custom-btn {
+    font-size: 1.5rem; /* Adjusted font size */
+    padding: 0.75rem 1.5rem;
+    margin-left: auto;
+    border-radius: 20px;
+    border-color: #FEE191; /* Gold border color */
+    color: #000000; /* Black text color */
+    background-color: #FEE191; /* Gold background color */
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* Dark gray background */
+    color: #FEE191; /* Gold text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FEE191; /* Gold link color */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFED00; /* Lighter yellow color on hover */
+    text-decoration: underline;
+}
+
+/* Skill Bars */
+.skills {
+    margin: 20px 0;
+}
+
+.skills h3 {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.skill-progress {
+    background-color: #FEE191; /* Green color for progress */
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Section Links */
 section a {
     color: #FEE191; /* Gold link color */
     margin: 0 10px;
@@ -348,22 +355,3 @@ section a:hover {
     color: #FFED00; /* Lighter yellow color on hover */
     text-decoration: underline;
 }
-/* Animation keyframes for fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Apply animation to the header section */
-.header-section {
-    animation: fadeIn 5s ease-out;
-}
-
-/* Animation for the profile image */
-
